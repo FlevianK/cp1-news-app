@@ -31,6 +31,7 @@
     "react-select": "^1.0.0-rc.4",
     "react-virtualized-select": "^3.0.1",
     "reactstrap": "^4.5.0",
+    "serve": "^5.1.5",
     "webpack": "^2.5.1"
   },
   "devDependencies": {
@@ -42,6 +43,7 @@
     "css-loader": "^0.28.1",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",
+    "image-webpack-loader": "^3.3.1",
     "jest": "^20.0.3",
     "node": "0.0.0",
     "node-sass": "^4.5.2",

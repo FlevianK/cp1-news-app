@@ -23,6 +23,7 @@ class ArticlesTableComponent extends React.Component {
         }
         this.onChange = this.onChange.bind(this);
         this.handleOptions = this.handleOptions.bind(this);
+        // this.getUrl = this.getUrl.bind(this)
 
     }
     componentDidMount() {
@@ -48,10 +49,12 @@ class ArticlesTableComponent extends React.Component {
     handleUrl(value, row, index) {
         // this.setState({ isOpen: false });
         // this.props.onOpenArticles(row.url);
-        return "<a href='" + row.url + "'>" + value + "</a>";
+        console.log('this.props', row.url);
+        // this.props.clickedUrl(row.url);
+        return "<a href=" + row.url + " target='_black'>" + value + "</a>";
     }
 
-    o
+
     render() {
         const { articles } = this.state;
 

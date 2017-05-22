@@ -7,9 +7,11 @@ class ToggleableArticlesComponent extends React.Component {
         super(props);
         this.state = {
             isOpen: true,
+            // clickedUrl: ''
         };
         this.handleArticlesOpen = this.handleArticlesOpen.bind(this);
         this.handleArticlesTableOpen = this.handleArticlesTableOpen.bind(this);
+        // this.getUrl = this.getUrl.bind(this);
     }
 
     handleArticlesOpen() {
@@ -22,30 +24,37 @@ class ToggleableArticlesComponent extends React.Component {
             isOpen: true
         });
     }
+    // getUrl(rowUrl) {
+    //     this.setState({
+    //         clickedUrl: rowUrl,
+    //         isOpen: false
+    //     });
+    // }
     render() {
-        if (this.state.isOpen) {
-            return (
-                <div>
-                    <ArticlesTable
-                        articlesTableHeader="Articles List"
-                        sourceName={this.props.sourceName}
-                        sourceId={this.props.sourceId}
-                        handleArticlesOpen={this.handleArticlesOpen}
-                        isOpen={this.state.isOpen}
-                    />
-                </div>
-            );
-        } else {
+        // if (this.state.isOpen) {
+        return (
+            <div>
+                <ArticlesTable
+                    articlesTableHeader="Articles List"
+                    sourceName={this.props.sourceName}
+                    sourceId={this.props.sourceId}
+                    handleArticlesOpen={this.handleArticlesOpen}
+                    isOpen={this.state.isOpen}
+                />
+            </div>
+        );
+        /*} else {
             return (
                 <div>
                     <Articles
                         articlesHeader="Articles"
                         isOpen={this.state.isOpen}
                         handleArticlesTableOpen={this.handleArticlesTableOpen}
-                        sourceId={this.props.sourceId} />
+                        sourceId={this.props.sourceId}
+                    />
                 </div>
-            );
-        }
+            );*/
+        // }
     }
 }
 

@@ -6,7 +6,7 @@ import { Grid } from 'react-bootstrap';
 class AppComponent extends React.Component {
     render() {
         return (
-            <div>
+            <div className="app">
                 <Grid>
                     <Header header="Worlds News" />
                     <Content />

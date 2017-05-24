@@ -3,7 +3,7 @@ import { Nav, NavItem } from 'react-bootstrap';
 import AppStore from '../stores/AppStore';
 import AppActions from '../actions/AppActions';
 import Select from 'react-select';
-import 'react-select/dist/react-select.css';
+// import 'react-select/dist/react-select.css';
 
 const FILTERS = {
     country: {
@@ -143,3 +143,12 @@ class SourcesComponent extends React.Component {
 }
 
 export default SourcesComponent;
+
+
+// searchableData = {
+//     sources: [],
+//     articles: [],
+//     authors: []
+// }
+
+// searchData = Object.assign([], searchableData, [...searchableData.sources, ...searchableData.articles, ...searchableData.authors])

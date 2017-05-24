@@ -1,6 +1,5 @@
 import React from 'react';
 import { GoogleLogin } from 'react-google-login-component';
-import Lightbox from 'react-images';
 
 class LoginComponent extends React.Component {
 
@@ -10,7 +9,7 @@ class LoginComponent extends React.Component {
 
     responseGoogle(googleUser) {
         var id_token = googleUser.getAuthResponse().id_token;
-        console.log({ accessToken: id_token });
+        // console.log({ accessToken: id_token });
         //anything else you want to do(save to localStorage)... 
     }
 

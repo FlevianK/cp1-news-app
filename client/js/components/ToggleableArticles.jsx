@@ -9,21 +9,21 @@ class ToggleableArticlesComponent extends React.Component {
             isOpen: true,
             // clickedUrl: ''
         };
-        this.handleArticlesOpen = this.handleArticlesOpen.bind(this);
-        this.handleArticlesTableOpen = this.handleArticlesTableOpen.bind(this);
+        // this.handleArticlesOpen = this.handleArticlesOpen.bind(this);
+        // this.handleArticlesTableOpen = this.handleArticlesTableOpen.bind(this);
         // this.getUrl = this.getUrl.bind(this);
     }
 
-    handleArticlesOpen() {
-        this.setState({
-            isOpen: false
-        });
-    }
-    handleArticlesTableOpen() {
-        this.setState({
-            isOpen: true
-        });
-    }
+    // handleArticlesOpen() {
+    //     this.setState({
+    //         isOpen: false
+    //     });
+    // }
+    // handleArticlesTableOpen() {
+    //     this.setState({
+    //         isOpen: true
+    //     });
+    // }
     // getUrl(rowUrl) {
     //     this.setState({
     //         clickedUrl: rowUrl,

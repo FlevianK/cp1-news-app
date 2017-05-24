@@ -3,7 +3,7 @@ import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 import AppStore from '../stores/AppStore.js';
 import AppActions from '../actions/AppActions.js';
 import Select from 'react-select';
-import 'react-select/dist/react-select.css';
+// import 'react-select/dist/react-select.css';
 
 const options = [
     { value: "top", label: "Top" },
@@ -23,8 +23,6 @@ class ArticlesTableComponent extends React.Component {
         }
         this.onChange = this.onChange.bind(this);
         this.handleOptions = this.handleOptions.bind(this);
-        // this.getUrl = this.getUrl.bind(this)
-
     }
     componentDidMount() {
         AppActions.getArticles(this.props.sourceId, this.state.sortBy);
@@ -49,7 +47,6 @@ class ArticlesTableComponent extends React.Component {
     handleUrl(value, row, index) {
         // this.setState({ isOpen: false });
         // this.props.onOpenArticles(row.url);
-        console.log('this.props', row.url);
         // this.props.clickedUrl(row.url);
         return "<a href=" + row.url + " target='_black'>" + value + "</a>";
     }
@@ -70,12 +67,10 @@ class ArticlesTableComponent extends React.Component {
                 ></Select>
 
                 <BootstrapTable data={articles} striped={true} hover={true}>
-                    <TableHeaderColumn dataField="author" isKey={true} dataSort={true}>Article URL</TableHeaderColumn>
+                    <TableHeaderColumn dataField="author" isKey={true} dataSort={true}>Article author</TableHeaderColumn>
                     <TableHeaderColumn dataField="title" dataSort={true}>Article Title</TableHeaderColumn>
                     <TableHeaderColumn dataField="description" dataSort={true} dataFormat={this.handleUrl}>Article Description</TableHeaderColumn>
                     <TableHeaderColumn dataField="publishedAt" dataSort={true}>Published At</TableHeaderColumn>
-                    <TableHeaderColumn >Favorite</TableHeaderColumn>
-
                 </BootstrapTable>
             </div>
         );

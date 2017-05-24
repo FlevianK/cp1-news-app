@@ -44,12 +44,8 @@ class AppStore extends EventEmitter {
 
     dispatcherCallback(action) {
         switch (action.actionType) {
-            case 'SOURCES_SEARCH':
-                this.soucreSearch(action.value);
-                break;
             case 'GET_ARTICLES':
                 this.setArticles(action.data);
-                console.log("weeee", action.data)
                 break;
             case 'GET_SOURCES':
                 this.setSources(action.data);

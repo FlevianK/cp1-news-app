@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1495605375518" clover="3.2.0">
-  <project timestamp="1495605375518" name="All files">
-    <metrics statements="97" coveredstatements="42" conditionals="3" coveredconditionals="0" methods="46" coveredmethods="17" elements="146" coveredelements="59" complexity="0" loc="97" ncloc="97" packages="5" files="12" classes="12">
+<coverage generated="1495628849247" clover="3.2.0">
+  <project timestamp="1495628849247" name="All files">
+    <metrics statements="94" coveredstatements="55" conditionals="2" coveredconditionals="0" methods="46" coveredmethods="26" elements="142" coveredelements="81" complexity="0" loc="94" ncloc="94" packages="5" files="12" classes="12">
       <package name="actions">
-        <metrics statements="15" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <metrics statements="15" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4"/>
         <file name="AppActions.js" path="/Users/fleviankanaiza/Documents/cpp1/cp1-news-app/client/js/actions/AppActions.js">
-          <metrics statements="15" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+          <metrics statements="15" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4"/>
           <line num="3" count="5" type="stmt"/>
           <line num="5" count="5" type="stmt"/>
           <line num="6" count="5" type="stmt"/>
-          <line num="10" count="0" type="stmt"/>
-          <line num="11" count="0" type="stmt"/>
-          <line num="13" count="0" type="stmt"/>
+          <line num="10" count="2" type="stmt"/>
+          <line num="11" count="2" type="stmt"/>
+          <line num="13" count="2" type="stmt"/>
           <line num="15" count="0" type="stmt"/>
           <line num="16" count="0" type="stmt"/>
           <line num="17" count="0" type="stmt"/>
-          <line num="23" count="0" type="stmt"/>
-          <line num="27" count="0" type="stmt"/>
-          <line num="29" count="0" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="27" count="1" type="stmt"/>
+          <line num="29" count="1" type="stmt"/>
           <line num="31" count="0" type="stmt"/>
           <line num="32" count="0" type="stmt"/>
-          <line num="38" count="0" type="stmt"/>
+          <line num="38" count="1" type="stmt"/>
         </file>
       </package>
       <package name="components">
-        <metrics statements="58" coveredstatements="32" conditionals="0" coveredconditionals="0" methods="31" coveredmethods="16"/>
+        <metrics statements="58" coveredstatements="37" conditionals="0" coveredconditionals="0" methods="31" coveredmethods="20"/>
         <file name="App.jsx" path="/Users/fleviankanaiza/Documents/cpp1/cp1-news-app/client/js/components/App.jsx">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="8" count="1" type="stmt"/>
@@ -34,14 +34,14 @@
           <line num="12" count="1" type="stmt"/>
         </file>
         <file name="ArticlesTable.jsx" path="/Users/fleviankanaiza/Documents/cpp1/cp1-news-app/client/js/components/ArticlesTable.jsx">
-          <metrics statements="17" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="2"/>
+          <metrics statements="17" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="3"/>
           <line num="8" count="4" type="stmt"/>
-          <line num="16" count="1" type="stmt"/>
-          <line num="17" count="1" type="stmt"/>
-          <line num="24" count="1" type="stmt"/>
-          <line num="25" count="1" type="stmt"/>
-          <line num="28" count="0" type="stmt"/>
-          <line num="29" count="0" type="stmt"/>
+          <line num="16" count="3" type="stmt"/>
+          <line num="17" count="3" type="stmt"/>
+          <line num="24" count="3" type="stmt"/>
+          <line num="25" count="3" type="stmt"/>
+          <line num="28" count="2" type="stmt"/>
+          <line num="29" count="2" type="stmt"/>
           <line num="33" count="0" type="stmt"/>
           <line num="34" count="0" type="stmt"/>
           <line num="37" count="0" type="stmt"/>
@@ -50,8 +50,8 @@
           <line num="44" count="0" type="stmt"/>
           <line num="45" count="0" type="stmt"/>
           <line num="51" count="0" type="stmt"/>
-          <line num="56" count="1" type="stmt"/>
-          <line num="58" count="1" type="stmt"/>
+          <line num="56" count="3" type="stmt"/>
+          <line num="58" count="3" type="stmt"/>
         </file>
         <file name="Content.jsx" path="/Users/fleviankanaiza/Documents/cpp1/cp1-news-app/client/js/components/Content.jsx">
           <metrics statements="9" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
@@ -76,14 +76,14 @@
           <line num="17" count="1" type="stmt"/>
         </file>
         <file name="Sources.jsx" path="/Users/fleviankanaiza/Documents/cpp1/cp1-news-app/client/js/components/Sources.jsx">
-          <metrics statements="23" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="5"/>
+          <metrics statements="23" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="8"/>
           <line num="8" count="3" type="stmt"/>
-          <line num="33" count="1" type="stmt"/>
-          <line num="34" count="1" type="stmt"/>
-          <line num="42" count="1" type="stmt"/>
-          <line num="43" count="1" type="stmt"/>
-          <line num="46" count="0" type="stmt"/>
-          <line num="47" count="0" type="stmt"/>
+          <line num="33" count="12" type="stmt"/>
+          <line num="34" count="12" type="stmt"/>
+          <line num="42" count="12" type="stmt"/>
+          <line num="43" count="12" type="stmt"/>
+          <line num="46" count="1" type="stmt"/>
+          <line num="47" count="1" type="stmt"/>
           <line num="51" count="0" type="stmt"/>
           <line num="54" count="0" type="stmt"/>
           <line num="56" count="0" type="stmt"/>
@@ -91,15 +91,15 @@
           <line num="60" count="0" type="stmt"/>
           <line num="65" count="0" type="stmt"/>
           <line num="66" count="0" type="stmt"/>
-          <line num="69" count="1" type="stmt"/>
-          <line num="70" count="1" type="stmt"/>
-          <line num="84" count="1" type="stmt"/>
-          <line num="87" count="1" type="stmt"/>
-          <line num="88" count="0" type="stmt"/>
+          <line num="69" count="13" type="stmt"/>
+          <line num="70" count="13" type="stmt"/>
+          <line num="84" count="13" type="stmt"/>
+          <line num="87" count="13" type="stmt"/>
+          <line num="88" count="2" type="stmt"/>
           <line num="94" count="0" type="stmt"/>
-          <line num="102" count="1" type="stmt"/>
-          <line num="120" count="3" type="stmt"/>
-          <line num="132" count="3" type="stmt"/>
+          <line num="102" count="13" type="stmt"/>
+          <line num="120" count="39" type="stmt"/>
+          <line num="132" count="39" type="stmt"/>
         </file>
         <file name="ToggleableArticles.jsx" path="/Users/fleviankanaiza/Documents/cpp1/cp1-news-app/client/js/components/ToggleableArticles.jsx">
           <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
@@ -112,7 +112,7 @@
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <file name="AppConstants.js" path="/Users/fleviankanaiza/Documents/cpp1/cp1-news-app/client/js/constants/AppConstants.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="6" type="stmt"/>
+          <line num="1" count="5" type="stmt"/>
         </file>
       </package>
       <package name="dispatchers">
@@ -122,15 +122,15 @@
         </file>
       </package>
       <package name="stores">
-        <metrics statements="23" coveredstatements="6" conditionals="3" coveredconditionals="0" methods="9" coveredmethods="1"/>
+        <metrics statements="20" coveredstatements="7" conditionals="2" coveredconditionals="0" methods="9" coveredmethods="2"/>
         <file name="AppStore.js" path="/Users/fleviankanaiza/Documents/cpp1/cp1-news-app/client/js/stores/AppStore.js">
-          <metrics statements="23" coveredstatements="6" conditionals="3" coveredconditionals="0" methods="9" coveredmethods="1"/>
-          <line num="5" count="6" type="stmt"/>
-          <line num="9" count="6" type="stmt"/>
-          <line num="10" count="6" type="stmt"/>
-          <line num="14" count="6" type="stmt"/>
-          <line num="15" count="6" type="stmt"/>
-          <line num="16" count="6" type="stmt"/>
+          <metrics statements="20" coveredstatements="7" conditionals="2" coveredconditionals="0" methods="9" coveredmethods="2"/>
+          <line num="5" count="5" type="stmt"/>
+          <line num="9" count="5" type="stmt"/>
+          <line num="10" count="5" type="stmt"/>
+          <line num="14" count="5" type="stmt"/>
+          <line num="15" count="5" type="stmt"/>
+          <line num="16" count="5" type="stmt"/>
           <line num="19" count="0" type="stmt"/>
           <line num="23" count="0" type="stmt"/>
           <line num="24" count="0" type="stmt"/>
@@ -138,16 +138,13 @@
           <line num="31" count="0" type="stmt"/>
           <line num="32" count="0" type="stmt"/>
           <line num="35" count="0" type="stmt"/>
-          <line num="38" count="0" type="stmt"/>
+          <line num="38" count="3" type="stmt"/>
           <line num="42" count="0" type="stmt"/>
-          <line num="46" count="0" type="cond" truecount="0" falsecount="3"/>
+          <line num="46" count="0" type="cond" truecount="0" falsecount="2"/>
           <line num="48" count="0" type="stmt"/>
           <line num="49" count="0" type="stmt"/>
           <line num="51" count="0" type="stmt"/>
-          <line num="52" count="0" type="stmt"/>
-          <line num="53" count="0" type="stmt"/>
-          <line num="55" count="0" type="stmt"/>
-          <line num="58" count="0" type="stmt"/>
+          <line num="54" count="0" type="stmt"/>
         </file>
       </package>
     </metrics>

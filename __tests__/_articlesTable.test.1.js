@@ -1,6 +1,6 @@
 import ArticlesTable from '../client/js/components/ArticlesTable.jsx';
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 
 describe('ArticlesTable', () => {
     let wrapper = shallow(<ArticlesTable />);
@@ -23,5 +23,15 @@ describe('ArticlesTable', () => {
     it('should have the `BootstrapTable` element', () => {
         const bootstrapTable = wrapper.find('BootstrapTable');
         expect(bootstrapTable.length).toEqual(1);
+    });
+    it('should display Articles', () => {
+        let mockDisplay = jest.fn();
+        const wrapper = mount(<ArticlesTable getArticles={mockDisplay} />);
+        expect(wrapper).toBeDefined();
+    });
+    it('should display Articles', () => {
+        let mockDisplay = jest.fn();
+        const wrapper = mount(<ArticlesTable handleOptions={mockDisplay} />);
+        expect(wrapper).toBeDefined();
     });
 });

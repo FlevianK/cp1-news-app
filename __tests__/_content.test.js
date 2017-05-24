@@ -15,7 +15,12 @@ describe('Content', () => {
     });
     it('should have the `Sources component`', () => {
         const sources = wrapper.find('Sources');
-        expect(sources.length).toEqual(1);
+        const col = wrapper.find('Col');
+
+        expect(wrapper.find('#content').length).toEqual(1);
+        expect(col.find('Sources').length).toEqual(1);
+
+        // expect(sources.length).toEqual(1);
     });
     it('should have the `ToggleableArticles component`', () => {
         expect(

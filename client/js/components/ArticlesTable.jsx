@@ -72,6 +72,7 @@ class ArticlesTableComponent extends React.Component {
                     <TableHeaderColumn dataField="description" dataSort={true} dataFormat={this.handleUrl}>Article Description</TableHeaderColumn>
                     <TableHeaderColumn dataField="publishedAt" dataSort={true}>Published At</TableHeaderColumn>
                 </BootstrapTable>
+
             </div>
         );
     }

@@ -15,10 +15,4 @@ describe('App', () => {
     it('should have the `Grid`', () => {
         expect(wrapper.find('Grid').length).toEqual(1);
     });
-    it('should have the `Header component`', () => {
-        expect(wrapper.dive().find('Header').length).toEqual(1);
-    });
-    it('should have the `Content component`', () => {
-        expect(wrapper.find('Content').length).toEqual(1);
-    });
 });

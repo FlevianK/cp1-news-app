@@ -20,24 +20,24 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">26.09% </span>
+        <span class="strong">35% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>6/23</span>
+        <span class='fraction'>7/20</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/3</span>
+        <span class='fraction'>0/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">11.11% </span>
+        <span class="strong">22.22% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/9</span>
+        <span class='fraction'>2/9</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">26.09% </span>
+        <span class="strong">35% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>6/23</span>
+        <span class='fraction'>7/20</span>
       </div>
     </div>
   </div>
@@ -101,26 +101,22 @@
 56
 57
 58
-59
-60
-61
-62
-63</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+59</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -142,7 +138,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -152,10 +148,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -203,8 +195,8 @@ class AppStore extends EventEmitter {
 <span class="fstat-no" title="function not covered" >    ge</span>tArticles() {
 <span class="cstat-no" title="statement not covered" >        return this.state.articles;</span>
     }
-<span class="fstat-no" title="function not covered" >    ad</span>dChangeListener(callback) {
-<span class="cstat-no" title="statement not covered" >        this.on(eventName, callback);</span>
+    addChangeListener(callback) {
+        this.on(eventName, callback);
     }
 &nbsp;
 <span class="fstat-no" title="function not covered" >    re</span>moveChangeListener(callback) {
@@ -213,12 +205,8 @@ class AppStore extends EventEmitter {
 &nbsp;
 <span class="fstat-no" title="function not covered" >    di</span>spatcherCallback(action) {
 <span class="cstat-no" title="statement not covered" >        switch (action.actionType) {</span>
-            case 'SOURCES_SEARCH':
-<span class="cstat-no" title="statement not covered" >                this.soucreSearch(action.value);</span>
-<span class="cstat-no" title="statement not covered" >                break;</span>
             case 'GET_ARTICLES':
 <span class="cstat-no" title="statement not covered" >                this.setArticles(action.data);</span>
-<span class="cstat-no" title="statement not covered" >                console.log("weeee", action.data)</span>
 <span class="cstat-no" title="statement not covered" >                break;</span>
             case 'GET_SOURCES':
 <span class="cstat-no" title="statement not covered" >                this.setSources(action.data);</span>
@@ -235,7 +223,7 @@ export default new AppStore();
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed May 24 2017 08:56:15 GMT+0300 (EAT)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed May 24 2017 15:27:29 GMT+0300 (EAT)
 </div>
 </div>
 <script src="../prettify.js"></script>

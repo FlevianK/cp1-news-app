@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">66.67% </span>
+        <span class="strong">63.64% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>10/15</span>
+        <span class='fraction'>7/11</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -35,9 +35,9 @@
         <span class='fraction'>4/6</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">66.67% </span>
+        <span class="strong">63.64% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>10/15</span>
+        <span class='fraction'>7/11</span>
       </div>
     </div>
   </div>
@@ -82,46 +82,42 @@
 37
 38
 39
-40
-41
-42</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+40</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -133,38 +129,36 @@ const apiUrl = 'https://newsapi.org/v1/';
 const apiKey = `62db6ba454ee4700bfeedd7000a7c4d1`;
 &nbsp;
 export default class AppActions {
-    static getArticles(sourcesName, sortBy) {
-        console.log('called');
-        const url = ` https://newsapi.org/v1/articles?source=` + sourcesName + `&amp;sortBy=` + sortBy + `&amp;apiKey=${apiKey}`;
+  static getArticles(sourcesName, sortBy) {
+    const url = ` https://newsapi.org/v1/articles?source=` + sourcesName + `&amp;sortBy=` + sortBy + `&amp;apiKey=${apiKey}`;
 &nbsp;
-        axios.get(url)
-            .then(<span class="fstat-no" title="function not covered" >(r</span>esponse) =&gt; {
-<span class="cstat-no" title="statement not covered" >                console.log('afds');</span>
-                const articles = <span class="cstat-no" title="statement not covered" >response.data.articles;</span>
-<span class="cstat-no" title="statement not covered" >                AppDispatcher.dispatch({</span>
-                    actionType: 'GET_ARTICLES',
-                    data: articles
-                })
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-    }
-    static getSources(filterKey, filterValue) {
-        const url = `https://newsapi.org/v1/sources?` + filterKey + `=` + filterValue;
+    axios.get(url)
+      .then(<span class="fstat-no" title="function not covered" >(r</span>esponse) =&gt; {
+        const articles = <span class="cstat-no" title="statement not covered" >response.data.articles;</span>
+<span class="cstat-no" title="statement not covered" >        AppDispatcher.dispatch({</span>
+          actionType: 'GET_ARTICLES',
+          data: articles
+        })
+      })
+      .catch(function (error) {
+        // console.log(error);
+      });
+  }
+  static getSources(filterKey, filterValue) {
+    const url = `https://newsapi.org/v1/sources?` + filterKey + `=` + filterValue;
 &nbsp;
-        axios.get(url)
-            .then(<span class="fstat-no" title="function not covered" >(r</span>esponse) =&gt; {
-                const sources = <span class="cstat-no" title="statement not covered" >response.data.sources;</span>
-<span class="cstat-no" title="statement not covered" >                AppDispatcher.dispatch({</span>
-                    actionType: 'GET_SOURCES',
-                    data: sources
-                })
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-    }
+    axios.get(url)
+      .then(<span class="fstat-no" title="function not covered" >(r</span>esponse) =&gt; {
+        const sources = <span class="cstat-no" title="statement not covered" >response.data.sources;</span>
+<span class="cstat-no" title="statement not covered" >        AppDispatcher.dispatch({</span>
+          actionType: 'GET_SOURCES',
+          data: sources
+        })
+      })
+      .catch(function (error) {
+        // console.log(error);
+      });
+  }
 }
 &nbsp;</pre></td></tr>
 </table></pre>
@@ -172,7 +166,7 @@ export default class AppActions {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed May 24 2017 15:27:29 GMT+0300 (EAT)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu May 25 2017 00:02:02 GMT+0300 (EAT)
 </div>
 </div>
 <script src="../prettify.js"></script>

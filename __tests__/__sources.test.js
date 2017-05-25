@@ -3,23 +3,6 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 
 describe('Sources', () => {
-  let sourceslist;
-
-  beforeEach(() => {
-    sourceslist = shallow(<Sources sources={[{
-      "id": "al-jazeera-english",
-      "name": "Al Jazeera English",
-      "url": "Al-Jazeera-English.com"
-    }, {
-      "id": "ars-technica",
-      "name": "Ars Technica",
-      "url": "Ars-Technica.com"
-    }, {
-      "id": "associated-press",
-      "name": "Associated Press",
-      "url": "Associated-Press.com"
-    }]} />);
-  });
   let wrapper = shallow(<Sources />);
 
   it('should have the `div`', () => {

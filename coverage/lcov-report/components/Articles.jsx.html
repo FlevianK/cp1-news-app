@@ -123,7 +123,31 @@
 78
 79
 80
-81</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -138,6 +162,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -148,6 +180,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
@@ -155,21 +192,32 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -216,7 +264,15 @@ const options = [
   { value: "popular", label: "Popular" }
 ]
 &nbsp;
+/**
+ * Class to hold the ArticlesComponent component.
+ * @extends React.Component
+ */
 class ArticlesComponent extends React.Component {
+  /**
+  * Set the Initial conditions for showing the News Content
+  * @param {object} props - The properties of the ArticlesComponent Class
+  */
   constructor(props, context) {
     super(props, context);
     this.state = {
@@ -229,18 +285,36 @@ class ArticlesComponent extends React.Component {
     this.onChange = this.onChange.bind(this);
     this.handleOptions = this.handleOptions.bind(this);
   }
+&nbsp;
+  /**
+   * Invoked when the component mounted for the first time
+   * @return {void} returns the initial state and props
+   */
   componentDidMount() {
     AppActions.getArticles(this.props.sourceId, this.state.sortBy);
     AppStore.addChangeListener(this.onChange);
   }
 &nbsp;
+  /**
+     * Invoked immediately after props changes and rerender the component
+     * @return {void} returns the initiall state and new props
+     */
 <span class="fstat-no" title="function not covered" >  co</span>mponentWillReceiveProps() {
 <span class="cstat-no" title="statement not covered" >    AppActions.getArticles(this.props.sourceId, this.state.sortBy);</span>
 <span class="cstat-no" title="statement not covered" >    AppStore.addChangeListener(this.onChange);</span>
   }
+&nbsp;
+  /**
+  * The method to set the state of the articles when there is a change
+  */
 <span class="fstat-no" title="function not covered" >  on</span>Change() {
 <span class="cstat-no" title="statement not covered" >    this.setState({ articles: AppStore.getArticle() });</span>
   }
+&nbsp;
+  /**
+   * The method that for handling change
+   * @return {object} sets the state based on value
+   */
 <span class="fstat-no" title="function not covered" >  ha</span>ndleOptions(event) {
     const sortBy = <span class="cstat-no" title="statement not covered" >event.value;</span>
 <span class="cstat-no" title="statement not covered" >    this.setState({</span>
@@ -249,10 +323,8 @@ class ArticlesComponent extends React.Component {
 <span class="cstat-no" title="statement not covered" >    AppActions.getArticles(this.props.sourceId, sortBy);</span>
 <span class="cstat-no" title="statement not covered" >    AppStore.addChangeListener(this.onChange);</span>
   }
+&nbsp;
 <span class="fstat-no" title="function not covered" >  ha</span>ndleUrl(value, row, index) {
-    // this.setState({ isOpen: false });
-    // this.props.onOpenArticles(row.url);
-    // this.props.clickedUrl(row.url);
 <span class="cstat-no" title="statement not covered" >    return "&lt;a href=" + row.url + " target='_black'&gt;" + value + "&lt;/a&gt;";</span>
   }
 &nbsp;
@@ -289,7 +361,7 @@ export default ArticlesComponent;</pre></td></tr>
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu May 25 2017 00:02:02 GMT+0300 (EAT)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu May 25 2017 08:45:52 GMT+0300 (EAT)
 </div>
 </div>
 <script src="../prettify.js"></script>

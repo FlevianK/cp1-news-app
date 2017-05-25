@@ -3,7 +3,7 @@ import { Nav, NavItem } from 'react-bootstrap';
 import AppStore from '../stores/AppStore';
 import AppActions from '../actions/AppActions';
 import Select from 'react-select';
-import 'react-select/dist/react-select.css';
+// import 'react-select/dist/react-select.css';
 
 const FILTERS = {
   country: {

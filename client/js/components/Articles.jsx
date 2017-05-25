@@ -3,7 +3,7 @@ import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 import AppStore from '../stores/AppStore.js';
 import AppActions from '../actions/AppActions.js';
 import Select from 'react-select';
-import 'react-select/dist/react-select.css';
+// import 'react-select/dist/react-select.css';
 
 const options = [
   { value: "top", label: "Top" },

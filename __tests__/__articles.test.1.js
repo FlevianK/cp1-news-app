@@ -26,7 +26,7 @@ describe('Articles', () => {
   });
   it('should display Articles', () => {
     let mockDisplay = jest.fn();
-    const wrapper = mount(<Articles getArticles={mockDisplay} />);
+    const wrapper = mount(<Articles getArticle={mockDisplay} />);
     expect(wrapper).toBeDefined();
   });
   it('should display Articles', () => {

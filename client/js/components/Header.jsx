@@ -2,11 +2,12 @@ import React from 'react';
 import Login from './Login.jsx';
 import { Row, Col } from 'react-bootstrap';
 
-/**
+
+class Header extends React.Component {
+  /**
  * Class to hold the HeaderComponent component.
  * @extends React.Component
  */
-class HeaderComponent extends React.Component {
   render() {
     return (
       <Row id="header">
@@ -21,4 +22,4 @@ class HeaderComponent extends React.Component {
   }
 }
 
-export default HeaderComponent;
+export default Header;

@@ -3,7 +3,6 @@ import { Nav, NavItem } from 'react-bootstrap';
 import AppStore from '../stores/AppStore';
 import AppActions from '../actions/AppActions';
 import Select from 'react-select';
-// import 'react-select/dist/react-select.css';
 
 const FILTERS = {
   country: {
@@ -29,16 +28,17 @@ const FILTERS = {
   }
 };
 
-/**
+
+class Sources extends React.Component {
+  /**
  * Class to hold the SourcesComponent component.
  * @extends React.Component
  */
-class SourcesComponent extends React.Component {
-  /**
-  * Set the Initial conditions for showing the News Content
-  * @param {object} props - The properties of the SourcesComponent Class
-  */
   constructor() {
+    /**
+ * Set the Initial conditions for showing the News Content
+ * @param {object} props - The properties of the SourcesComponent Class
+ */
     super();
     this.state = {
       sources: [],
@@ -52,27 +52,27 @@ class SourcesComponent extends React.Component {
     this.handleFilterChange = this.handleFilterChange.bind(this);
   }
 
-  /**
+  componentDidMount() {
+    /**
    * Invoked when the component mounted for the first time
    * @return {void} returns the initial state and props
    */
-  componentDidMount() {
     AppActions.getSources(this.state.currentFilter.filterKey, this.state.currentFilter.filterValue);
     AppStore.addChangeListener(this.onChange);
   }
 
-  /**
+  onChange() {
+    /**
     * The method to set the state of the sources when there is a change
     */
-  onChange() {
     this.setState({ sources: AppStore.getSource() });
   }
 
-  /**
+  handleFilterChange(event) {
+    /**
    * The method that for handling change
    * @return {object} sets the state based on value
    */
-  handleFilterChange(event) {
     const { name, value } = event.target;
 
     this.setState((prevState) => {
@@ -103,9 +103,7 @@ class SourcesComponent extends React.Component {
                 filterKey,
         filterValue
             }
-        } = this.state;
-
-
+        } = this.state
     const sourceLinks = sources.map((source) => {
       return (
         <ul key={source.id}>
@@ -164,13 +162,4 @@ class SourcesComponent extends React.Component {
   }
 }
 
-export default SourcesComponent;
-
-
-// searchableData = {
-//     sources: [],
-//     articles: [],
-//     authors: []
-// }
-
-// searchData = Object.assign([], searchableData, [...searchableData.sources, ...searchableData.articles, ...searchableData.authors])
+export default Sources;

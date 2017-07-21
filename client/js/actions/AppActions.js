@@ -6,7 +6,7 @@ const apiUrl = 'https://newsapi.org/v1/';
 const apiKey = `62db6ba454ee4700bfeedd7000a7c4d1`;
 
 export default class AppActions {
-  static getArticles(sourcesName, sortBy) {
+  static getArticle(sourcesName, sortBy) {
     const url = ` https://newsapi.org/v1/articles?source=` + sourcesName + `&sortBy=` + sortBy + `&apiKey=${apiKey}`;
 
     axios.get(url)

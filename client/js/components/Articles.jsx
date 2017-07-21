@@ -3,7 +3,7 @@ import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 import AppStore from '../stores/AppStore.js';
 import AppActions from '../actions/AppActions.js';
 import Select from 'react-select';
-// import 'react-select/dist/react-select.css';
+import PropTypes from 'prop-types';
 
 const options = [
   { value: "top", label: "Top" },
@@ -38,7 +38,7 @@ class ArticlesComponent extends React.Component {
    * @return {void} returns the initial state and props
    */
   componentDidMount() {
-    AppActions.getArticles(this.props.sourceId, this.state.sortBy);
+    AppActions.getArticle(this.props.sourceId, this.state.sortBy);
     AppStore.addChangeListener(this.onChange);
   }
 
@@ -47,7 +47,7 @@ class ArticlesComponent extends React.Component {
      * @return {void} returns the initiall state and new props
      */
   componentWillReceiveProps() {
-    AppActions.getArticles(this.props.sourceId, this.state.sortBy);
+    AppActions.getArticle(this.props.sourceId, this.state.sortBy);
     AppStore.addChangeListener(this.onChange);
   }
 
@@ -67,7 +67,7 @@ class ArticlesComponent extends React.Component {
     this.setState({
       sortBy: sortBy
     });
-    AppActions.getArticles(this.props.sourceId, sortBy);
+    AppActions.getArticle(this.props.sourceId, sortBy);
     AppStore.addChangeListener(this.onChange);
   }
 
@@ -101,5 +101,9 @@ class ArticlesComponent extends React.Component {
     );
   }
 }
+ArticlesComponent.propTypes = {
+  sourceName: PropTypes.string,
+  sourceId: PropTypes.string,
+};
 
 export default ArticlesComponent;

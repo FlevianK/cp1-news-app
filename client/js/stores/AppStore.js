@@ -4,11 +4,11 @@ import AppConstants from '../constants/AppConstants';
 
 const eventName = 'change';
 
-/**
+export class AppStore extends EventEmitter {
+  /**
  * Class to hold the AppStore cla.ss
  * @extends EventEmittert
  */
-export class AppStore extends EventEmitter {
   constructor() {
     super();
     this.state = {
@@ -22,11 +22,12 @@ export class AppStore extends EventEmitter {
   emitChange(eventName) {
     this.emit(eventName);
   }
-  /**
+
+  setSources(source) {
+    /**
    * The method that for handling sources change
    * @return {object} sets the state based on value
    */
-  setSources(source) {
     this.state.sources = source;
     this.emitChange(eventName);
   }
@@ -34,15 +35,17 @@ export class AppStore extends EventEmitter {
     return this.state.sources;
   }
 
-  /**
+  setArticles(article) {
+    console.log("set articles", this.state.articles)
+    /**
    * The method that for handling articles change
    * @return {object} sets the state based on value
    */
-  setArticles(article) {
     this.state.articles = article;
     this.emitChange(eventName);
   }
   getArticle() {
+    console.log("get", this.state.articles)
     return this.state.articles;
   }
   addChangeListener(callback) {

@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Articles from './Articles.jsx';
 import Sources from './Sources.jsx';
 import { Row, Col } from 'react-bootstrap';
 
-/**
+class Content extends React.Component {
+  /**
  * Class to hold the ContentComponent component.
  * @extends React.Component
  */
-class ContentComponent extends Component {
-  /**
+  constructor(props, context) {
+    /**
   * Set the Initial conditions for showing the News Applications
   * @param {object} props - The properties of the ContentComponent Class
   */
-  constructor(props, context) {
     super(props, context);
     this.state = {
       sourceId: 'techcrunch',
@@ -23,11 +23,11 @@ class ContentComponent extends Component {
     this.handleSourceClick = this.handleSourceClick.bind(this);
   }
 
-  /**
+  handleSourceClick(sourcesId, sourcesName) {
+    /**
     * The method that for handling change
     * @return {object} sets the state based on value
     */
-  handleSourceClick(sourcesId, sourcesName) {
     const sourceId = sourcesId;
     const sourceName = sourcesName;
     this.setState({
@@ -36,11 +36,11 @@ class ContentComponent extends Component {
     });
   }
 
-  /**
+  updateSearch(event) {
+    /**
   * The method that for handling change
   * @return {object} sets the state based on value
   */
-  updateSearch(event) {
     this.setState({
       sourceId: event.value,
       sourceName: event.label
@@ -62,4 +62,4 @@ class ContentComponent extends Component {
   }
 }
 
-export default ContentComponent;
+export default Content;

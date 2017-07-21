@@ -1,16 +1,17 @@
 import React from 'react';
 import { GoogleLogin } from 'react-google-login-component';
 
-/**
+
+class Login extends React.Component {
+  /**
  * Class to hold the LoginComponent component.
  * @extends React.Component
  */
-class LoginComponent extends React.Component {
-  /**
+  constructor(props, context) {
+    /**
     * Set the Initial conditions for showing the News Header
     * @param {object} props - The properties of the ArticlesComponent Class
     */
-  constructor(props, context) {
     super(props, context);
   }
 
@@ -33,4 +34,4 @@ class LoginComponent extends React.Component {
 
 }
 
-export default LoginComponent;
+export default Login;

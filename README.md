@@ -1,4 +1,5 @@
-(https://travis-ci.org/FlevianK/cp1-news-app.svg?branch=develop)
+[![Build Status](https://travis-ci.org/FlevianK/cp1-news-app.svg?branch=develop)]
+(https://travis-ci.org/FlevianK/cp1-news-app)
 [![Coverage Status](https://coveralls.io/repos/github/FlevianK/cp1-news-app/badge.svg?branch=develop)](https://coveralls.io/github/FlevianK/cp1-news-app?branch=develop)
 
 # cp1-news-app

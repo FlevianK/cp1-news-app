@@ -1,7 +1,7 @@
 # cp1-news-app
 This repository holds files for checkpoint 1 news application
 
-###Installing
+### Installing
 
 1. Install NodeJS
 
@@ -15,7 +15,7 @@ This repository holds files for checkpoint 1 news application
 
 npm test
 
-##Built With
+## Built With
 
 This project uses a host of modern technologies. The core ones are:
 
@@ -24,11 +24,11 @@ This project uses a host of modern technologies. The core ones are:
 3. REACT: REACT was developed by Facebook and are used for building web pages that are structured as a collection of components. These components are kept as independent as possible.
 4. Flux: This is a design architecture for building stable web apps with, among other things, a unidirectional flow of data.
 
-##Author
+## Author
 
-Flevian Kanaiza
+* Flevian Kanaiza
 
-##License
+## License
 
 This project is licensed under the MIT License
 

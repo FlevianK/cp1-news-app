@@ -11,7 +11,7 @@ This repository holds files for checkpoint 1 news application
 
 3. Run the project: Enter the following command: npm start Open a web browser of your choice and visit http://localhost:8080.
 
-###Running the tests
+### Running the tests
 
 npm test
 

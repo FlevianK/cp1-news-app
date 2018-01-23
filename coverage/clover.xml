@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1495702776598" clover="3.2.0">
+  <project timestamp="1495702776598" name="All files">
+    <metrics statements="87" coveredstatements="62" conditionals="2" coveredconditionals="0" methods="43" coveredmethods="30" elements="132" coveredelements="92" complexity="0" loc="87" ncloc="87" packages="5" files="10" classes="10">
+      <package name="actions">
+        <metrics statements="11" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4"/>
+        <file name="AppActions.js" path="/Users/fleviankanaiza/Documents/cpp1/cp1-news-app/client/js/actions/AppActions.js">
+          <metrics statements="11" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4"/>
+          <line num="3" count="4" type="stmt"/>
+          <line num="5" count="4" type="stmt"/>
+          <line num="6" count="4" type="stmt"/>
+          <line num="10" count="2" type="stmt"/>
+          <line num="12" count="2" type="stmt"/>
+          <line num="14" count="0" type="stmt"/>
+          <line num="15" count="0" type="stmt"/>
+          <line num="25" count="3" type="stmt"/>
+          <line num="27" count="3" type="stmt"/>
+          <line num="29" count="0" type="stmt"/>
+          <line num="30" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="components">
+        <metrics statements="54" coveredstatements="39" conditionals="0" coveredconditionals="0" methods="28" coveredmethods="19"/>
+        <file name="App.jsx" path="/Users/fleviankanaiza/Documents/cpp1/cp1-news-app/client/js/components/App.jsx">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="16" count="1" type="stmt"/>
+        </file>
+        <file name="Articles.jsx" path="/Users/fleviankanaiza/Documents/cpp1/cp1-news-app/client/js/components/Articles.jsx">
+          <metrics statements="17" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="3"/>
+          <line num="8" count="3" type="stmt"/>
+          <line num="24" count="5" type="stmt"/>
+          <line num="25" count="5" type="stmt"/>
+          <line num="32" count="5" type="stmt"/>
+          <line num="33" count="5" type="stmt"/>
+          <line num="41" count="2" type="stmt"/>
+          <line num="42" count="2" type="stmt"/>
+          <line num="50" count="0" type="stmt"/>
+          <line num="51" count="0" type="stmt"/>
+          <line num="58" count="0" type="stmt"/>
+          <line num="66" count="0" type="stmt"/>
+          <line num="67" count="0" type="stmt"/>
+          <line num="70" count="0" type="stmt"/>
+          <line num="71" count="0" type="stmt"/>
+          <line num="75" count="0" type="stmt"/>
+          <line num="80" count="6" type="stmt"/>
+          <line num="82" count="6" type="stmt"/>
+        </file>
+        <file name="Content.jsx" path="/Users/fleviankanaiza/Documents/cpp1/cp1-news-app/client/js/components/Content.jsx">
+          <metrics statements="9" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="17" count="1" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="31" count="0" type="stmt"/>
+          <line num="32" count="0" type="stmt"/>
+          <line num="33" count="0" type="stmt"/>
+          <line num="44" count="0" type="stmt"/>
+          <line num="52" count="1" type="stmt"/>
+        </file>
+        <file name="Header.jsx" path="/Users/fleviankanaiza/Documents/cpp1/cp1-news-app/client/js/components/Header.jsx">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="11" count="1" type="stmt"/>
+        </file>
+        <file name="Login.jsx" path="/Users/fleviankanaiza/Documents/cpp1/cp1-news-app/client/js/components/Login.jsx">
+          <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+          <line num="14" count="1" type="stmt"/>
+          <line num="18" count="0" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
+        </file>
+        <file name="Sources.jsx" path="/Users/fleviankanaiza/Documents/cpp1/cp1-news-app/client/js/components/Sources.jsx">
+          <metrics statements="23" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="10"/>
+          <line num="8" count="3" type="stmt"/>
+          <line num="42" count="7" type="stmt"/>
+          <line num="43" count="7" type="stmt"/>
+          <line num="51" count="7" type="stmt"/>
+          <line num="52" count="7" type="stmt"/>
+          <line num="60" count="1" type="stmt"/>
+          <line num="61" count="1" type="stmt"/>
+          <line num="68" count="0" type="stmt"/>
+          <line num="76" count="2" type="stmt"/>
+          <line num="78" count="2" type="stmt"/>
+          <line num="79" count="2" type="stmt"/>
+          <line num="82" count="2" type="stmt"/>
+          <line num="87" count="2" type="stmt"/>
+          <line num="88" count="2" type="stmt"/>
+          <line num="91" count="10" type="stmt"/>
+          <line num="92" count="10" type="stmt"/>
+          <line num="106" count="10" type="stmt"/>
+          <line num="109" count="10" type="stmt"/>
+          <line num="110" count="2" type="stmt"/>
+          <line num="116" count="0" type="stmt"/>
+          <line num="124" count="10" type="stmt"/>
+          <line num="142" count="30" type="stmt"/>
+          <line num="154" count="36" type="stmt"/>
+        </file>
+      </package>
+      <package name="constants">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="AppConstants.js" path="/Users/fleviankanaiza/Documents/cpp1/cp1-news-app/client/js/constants/AppConstants.js">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="5" type="stmt"/>
+        </file>
+      </package>
+      <package name="dispatchers">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="AppDispatcher.js" path="/Users/fleviankanaiza/Documents/cpp1/cp1-news-app/client/js/dispatchers/AppDispatcher.js">
+          <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        </file>
+      </package>
+      <package name="stores">
+        <metrics statements="21" coveredstatements="15" conditionals="2" coveredconditionals="0" methods="9" coveredmethods="7"/>
+        <file name="AppStore.js" path="/Users/fleviankanaiza/Documents/cpp1/cp1-news-app/client/js/stores/AppStore.js">
+          <metrics statements="21" coveredstatements="15" conditionals="2" coveredconditionals="0" methods="9" coveredmethods="7"/>
+          <line num="5" count="5" type="stmt"/>
+          <line num="13" count="11" type="stmt"/>
+          <line num="14" count="11" type="stmt"/>
+          <line num="18" count="11" type="stmt"/>
+          <line num="19" count="11" type="stmt"/>
+          <line num="20" count="11" type="stmt"/>
+          <line num="23" count="2" type="stmt"/>
+          <line num="30" count="1" type="stmt"/>
+          <line num="31" count="1" type="stmt"/>
+          <line num="34" count="2" type="stmt"/>
+          <line num="42" count="1" type="stmt"/>
+          <line num="43" count="1" type="stmt"/>
+          <line num="46" count="2" type="stmt"/>
+          <line num="49" count="5" type="stmt"/>
+          <line num="53" count="0" type="stmt"/>
+          <line num="57" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="59" count="0" type="stmt"/>
+          <line num="60" count="0" type="stmt"/>
+          <line num="62" count="0" type="stmt"/>
+          <line num="65" count="0" type="stmt"/>
+          <line num="69" count="5" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>

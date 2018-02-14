@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/FlevianK/cp1-news-app.svg?branch=master)](https://travis-ci.org/FlevianK/cp1-news-app)
+
 # cp1-news-app
 This repository holds files for checkpoint 1 news application
 
